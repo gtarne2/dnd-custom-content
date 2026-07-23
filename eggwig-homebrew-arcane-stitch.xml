@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-  <element name="Arcane Stitch" type="Spell" source="Grant's Homebrew" id="ID_GRANT_HOMEBREW_SPELL_ARCANE_STITCH">
+  <info>
+    <name>Eggwig's Homebrew</name>
+    <update version="0.1.0">
+      <file name="eggwig-homebrew-arcane-stitch.xml" url="https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPOSITORY/raw/refs/heads/main/eggwig-homebrew-arcane-stitch.xml" />
+    </update>
+  </info>
+
+  <element name="Arcane Stitch" type="Spell" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_SPELL_ARCANE_STITCH">
     <supports>Artificer, Wizard</supports>
     <description>
       <p>You rewind a creature's recent harm, drawing its body back toward the moment before its injuries were sustained. Choose one creature you can see within range. The target regains 2d6 + your Intelligence modifier hit points.</p>
@@ -24,23 +31,23 @@
     </setters>
   </element>
 
-  <element name="Arcane Stitch (Granted Spell)" type="Class Feature" source="Grant's Homebrew" id="ID_GRANT_HOMEBREW_CLASS_FEATURE_ARCANE_STITCH_GRANTED">
+  <element name="Arcane Stitch (Granted Spell)" type="Class Feature" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_CLASS_FEATURE_ARCANE_STITCH_GRANTED">
     <compendium display="false" />
     <description>
       <p>You have learned <em>arcane stitch</em>. It does not count against your number of artificer spells prepared or spells known. You cast it using your normal artificer spell slots.</p>
       <div class="reference">
-        <div element="ID_GRANT_HOMEBREW_SPELL_ARCANE_STITCH" />
+        <div element="ID_EGGWIG_HOMEBREW_SPELL_ARCANE_STITCH" />
       </div>
     </description>
     <sheet alt="Arcane Stitch">
       <description>You know arcane stitch. It does not count against your prepared or known spells; cast it using your artificer spell slots. Track repeated targets manually: a second casting on the same creature before your next long rest heals only half.</description>
     </sheet>
     <rules>
-      <grant type="Spell" id="ID_GRANT_HOMEBREW_SPELL_ARCANE_STITCH" spellcasting="Artificer" />
+      <grant type="Spell" id="ID_EGGWIG_HOMEBREW_SPELL_ARCANE_STITCH" spellcasting="Artificer" />
     </rules>
   </element>
 
-  <element name="Arcane Stitch (Granted)" type="Option" source="Grant's Homebrew" id="ID_GRANT_HOMEBREW_OPTION_ARCANE_STITCH_GRANTED">
+  <element name="Arcane Stitch (Granted)" type="Option" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_OPTION_ARCANE_STITCH_GRANTED">
     <description>
       <p>Enable this option to add the granted <em>arcane stitch</em> spell to this character. The spell is on the artificer and wizard spell lists, but this grant adds it as an artificer spell for this character without using a prepared-spell or known-spell choice.</p>
     </description>
@@ -48,7 +55,7 @@
       <set name="short">You gain arcane stitch as an artificer spell; it does not count against your prepared or known spells.</set>
     </setters>
     <rules>
-      <grant type="Class Feature" id="ID_GRANT_HOMEBREW_CLASS_FEATURE_ARCANE_STITCH_GRANTED" />
+      <grant type="Class Feature" id="ID_EGGWIG_HOMEBREW_CLASS_FEATURE_ARCANE_STITCH_GRANTED" />
     </rules>
   </element>
 </elements>
