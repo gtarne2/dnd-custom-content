@@ -3,10 +3,10 @@
   <info>
     <name>Eggwig's Homebrew</name>
     <update version="0.1.0">
-      <file name="eggwig-homebrew.index" url="https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPOSITORY/raw/refs/heads/main/eggwig-homebrew.index" />
+      <file name="eggwig-homebrew.index" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/eggwig-homebrew.index" />
     </update>
   </info>
   <files>
-    <file name="eggwig-homebrew-arcane-stitch.xml" url="https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPOSITORY/raw/refs/heads/main/eggwig-homebrew-arcane-stitch.xml" />
+    <file name="eggwig-homebrew-arcane-stitch.xml" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/eggwig-homebrew-arcane-stitch.xml" />
   </files>
 </index>
