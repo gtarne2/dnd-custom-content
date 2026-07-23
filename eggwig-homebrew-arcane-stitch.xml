@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <element name="Arcane Stitch" type="Spell" source="Grant's Homebrew" id="ID_GRANT_HOMEBREW_SPELL_ARCANE_STITCH">
+    <supports>Artificer, Wizard</supports>
+    <description>
+      <p>You rewind a creature's recent harm, drawing its body back toward the moment before its injuries were sustained. Choose one creature you can see within range. The target regains 2d6 + your Intelligence modifier hit points.</p>
+      <p>In addition, you may end one of the following conditions affecting the target: grappled, prone, or slowed.</p>
+      <p><strong><em>Repeated Stitching.</em></strong> If you cast this spell on the same creature a second time before you finish a long rest, that casting restores only half as many hit points.</p>
+    </description>
+    <sheet>
+      <description>One creature you can see regains 2d6 + Intelligence modifier hit points; you may end grappled, prone, or slowed. If cast on the same creature a second time before your next long rest, that casting restores only half as many hit points.</description>
+    </sheet>
+    <setters>
+      <set name="level">2</set>
+      <set name="school">Chronomancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+
+  <element name="Arcane Stitch (Granted Spell)" type="Class Feature" source="Grant's Homebrew" id="ID_GRANT_HOMEBREW_CLASS_FEATURE_ARCANE_STITCH_GRANTED">
+    <compendium display="false" />
+    <description>
+      <p>You have learned <em>arcane stitch</em>. It does not count against your number of artificer spells prepared or spells known. You cast it using your normal artificer spell slots.</p>
+      <div class="reference">
+        <div element="ID_GRANT_HOMEBREW_SPELL_ARCANE_STITCH" />
+      </div>
+    </description>
+    <sheet alt="Arcane Stitch">
+      <description>You know arcane stitch. It does not count against your prepared or known spells; cast it using your artificer spell slots. Track repeated targets manually: a second casting on the same creature before your next long rest heals only half.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_GRANT_HOMEBREW_SPELL_ARCANE_STITCH" spellcasting="Artificer" />
+    </rules>
+  </element>
+
+  <element name="Arcane Stitch (Granted)" type="Option" source="Grant's Homebrew" id="ID_GRANT_HOMEBREW_OPTION_ARCANE_STITCH_GRANTED">
+    <description>
+      <p>Enable this option to add the granted <em>arcane stitch</em> spell to this character. The spell is on the artificer and wizard spell lists, but this grant adds it as an artificer spell for this character without using a prepared-spell or known-spell choice.</p>
+    </description>
+    <setters>
+      <set name="short">You gain arcane stitch as an artificer spell; it does not count against your prepared or known spells.</set>
+    </setters>
+    <rules>
+      <grant type="Class Feature" id="ID_GRANT_HOMEBREW_CLASS_FEATURE_ARCANE_STITCH_GRANTED" />
+    </rules>
+  </element>
+</elements>
