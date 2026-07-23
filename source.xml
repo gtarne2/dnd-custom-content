@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Eggwig's Homebrew</name>
+    <update version="0.1.0">
+      <file name="source.xml" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/source.xml" />
+    </update>
+  </info>
+  <element name="Eggwig's Homebrew" type="Source" source="Eggwig's Homebrew" id="ID_EGGWIG_SOURCE_EGGWIG_HOMEBREW">
+    <description>
+      <p>Homebrew content created for Eggwig.</p>
+    </description>
+    <setters>
+      <set name="abbreviation">EHW</set>
+      <set name="url">https://github.com/gtarne2/dnd-custom-content</set>
+      <set name="author" abbreviation="Eggwig" url="https://github.com/gtarne2">Eggwig</set>
+      <set name="official">false</set>
+      <set name="supplement">false</set>
+      <set name="playtest">false</set>
+      <set name="third-party">false</set>
+      <set name="homebrew">true</set>
+      <set name="league">false</set>
+      <set name="release">20260723</set>
+    </setters>
+  </element>
+</elements>
