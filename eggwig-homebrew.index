@@ -9,5 +9,6 @@
   <files>
     <file name="source.xml" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/source.xml" />
     <file name="eggwig-homebrew-arcane-stitch.xml" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/eggwig-homebrew-arcane-stitch.xml" />
+    <file name="eggwig-homebrew-items-and-traits.xml" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/eggwig-homebrew-items-and-traits.xml" />
   </files>
 </index>
