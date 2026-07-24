@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Eggwig's Homebrew</name>
+    <update version="0.1.1">
+      <file name="eggwig-homebrew-items-and-traits.xml" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/eggwig-homebrew-items-and-traits.xml" />
+    </update>
+  </info>
+
+  <element name="Polar Bear Cloak" type="Item" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_ITEM_POLAR_BEAR_CLOAK">
+    <description>
+      <p>While wearing this cloak, you have resistance to cold damage.</p>
+    </description>
+    <setters>
+      <set name="keywords">cloak, cold, resistance</set>
+      <set name="category">Adventuring Gear</set>
+    </setters>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+    </rules>
+  </element>
+
+  <element name="Polar Bear Cloak (Granted)" type="Option" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_OPTION_POLAR_BEAR_CLOAK_GRANTED">
+    <description>
+      <p>Enable this option to add the Polar Bear Cloak to this character's equipment. While the cloak is worn, it grants resistance to cold damage.</p>
+    </description>
+    <setters>
+      <set name="short">You gain the Polar Bear Cloak, which grants resistance to cold damage while worn.</set>
+    </setters>
+    <rules>
+      <grant type="Item" id="ID_EGGWIG_HOMEBREW_ITEM_POLAR_BEAR_CLOAK" />
+    </rules>
+  </element>
+
+  <element name="Deep Thought" type="Class Feature" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_CLASS_FEATURE_DEEP_THOUGHT">
+    <description>
+      <p>Twice per short rest, when you cast a spell of 1st level or higher using a spell slot, you can increase that spell's effective level by 1. You must have and expend a spell slot of the spell's original level; for all effects that depend on the spell slot's level, treat the spell as if it had been cast using a spell slot one level higher.</p>
+    </description>
+    <sheet usage="2/Short Rest">
+      <description>When you cast a spell of 1st level or higher, expend a spell slot of its original level to treat it as cast using a spell slot one level higher.</description>
+    </sheet>
+  </element>
+
+  <element name="Deep Thought (Granted)" type="Option" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_OPTION_DEEP_THOUGHT_GRANTED">
+    <description>
+      <p>Enable this option to add the Deep Thought trait to this character. It can be used twice per short rest.</p>
+    </description>
+    <setters>
+      <set name="short">You gain Deep Thought, usable twice per short rest.</set>
+    </setters>
+    <rules>
+      <grant type="Class Feature" id="ID_EGGWIG_HOMEBREW_CLASS_FEATURE_DEEP_THOUGHT" />
+    </rules>
+  </element>
+</elements>
