@@ -2,18 +2,20 @@
 <elements>
   <info>
     <name>Eggwig's Homebrew</name>
-    <update version="0.1.1">
+    <update version="0.1.2">
       <file name="eggwig-homebrew-items-and-traits.xml" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/eggwig-homebrew-items-and-traits.xml" />
     </update>
   </info>
 
-  <element name="Polar Bear Cloak" type="Item" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_ITEM_POLAR_BEAR_CLOAK">
+  <element name="Polar Bear Cloak" type="Magic Item" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_MAGIC_ITEM_POLAR_BEAR_CLOAK">
     <description>
       <p>While wearing this cloak, you have resistance to cold damage.</p>
     </description>
     <setters>
       <set name="keywords">cloak, cold, resistance</set>
-      <set name="category">Adventuring Gear</set>
+      <set name="category">Wondrous Items</set>
+      <set name="slot">shoulders</set>
+      <set name="type">Wondrous Item</set>
     </setters>
     <rules>
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
@@ -22,13 +24,13 @@
 
   <element name="Polar Bear Cloak (Granted)" type="Option" source="Eggwig's Homebrew" id="ID_EGGWIG_HOMEBREW_OPTION_POLAR_BEAR_CLOAK_GRANTED">
     <description>
-      <p>Enable this option to add the Polar Bear Cloak to this character's equipment. While the cloak is worn, it grants resistance to cold damage.</p>
+      <p>Enable this option to add the Polar Bear Cloak to this character as an equipable shoulder-slot magic item. While the cloak is equipped, it grants resistance to cold damage.</p>
     </description>
     <setters>
       <set name="short">You gain the Polar Bear Cloak, which grants resistance to cold damage while worn.</set>
     </setters>
     <rules>
-      <grant type="Item" id="ID_EGGWIG_HOMEBREW_ITEM_POLAR_BEAR_CLOAK" />
+      <grant type="Magic Item" id="ID_EGGWIG_HOMEBREW_MAGIC_ITEM_POLAR_BEAR_CLOAK" />
     </rules>
   </element>
 
