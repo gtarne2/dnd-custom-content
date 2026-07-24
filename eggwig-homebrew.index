@@ -2,7 +2,7 @@
 <index>
   <info>
     <name>Eggwig's Homebrew</name>
-    <update version="0.2.1">
+    <update version="0.2.2">
       <file name="eggwig-homebrew.index" url="https://github.com/gtarne2/dnd-custom-content/raw/refs/heads/main/eggwig-homebrew.index" />
     </update>
   </info>
